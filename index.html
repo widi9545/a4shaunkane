@@ -1,5 +1,5 @@
 <!-- https://stackoverflow.com/questions/1027354/need-an-unordered-list-without-any-bullets -->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="blog.css">
@@ -25,9 +25,12 @@
 	<div class="infoformclass" id="infoformid">
 		<ul style="list-style: none; padding:0;">
 			<form class="pure-form pure-form-stacked">
-			 	<li> <input id="emailinfo" label="emailEntry" placeholder="Give me your email!">  </li>
-			 	<li> <input id="nameinfo" label="nameEntry" placeholder="What is your name?">  </li>
-			 	<li> <input id="locationinfo" label="locationEntry" placeholder="Where do you live?"> </li>
+			 	<li> <label for="emailinfo">Email Info </label>
+			 			<input id="emailinfo" placeholder="Give me your email!">  </li>
+			 	<li> <label for="nameinfo">Name Info </label>
+			 		<input id="nameinfo" placeholder="What is your name?">  </li>
+			 	<li> <label for="locationinfo"> Location Info</label>
+			 	 	<input id="locationinfo" placeholder="Where do you live?"> </li>
 			</form>
 				<div id="submitalertdiv" class="hiddenalert"> <p id="submitalert" role="alert"> You can't submit yet!</p> </div>
 
