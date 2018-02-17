@@ -1,41 +1,124 @@
-<!-- https://stackoverflow.com/questions/1027354/need-an-unordered-list-without-any-bullets -->
-
 <html>
-<head>
-<title> William's Kickin Rad Blog </title>
-<body>
-<h1> Welcome Traveller - you look weary, stay here a while on Williams Blog before you continue on your way! </h1>
+<head> 
 
-	<h2> Starting My Week Via Concussion </h1>
-		<p> Test text </p>
-		<img src="williamphoto.jpg" alt="William in a hospital gown" style="width:100px;height:100px;">
+<link rel="stylesheet" href="phone.css"> <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"> 
+
+	<title> Phone Dialer </title>
 
 
-	<h2> What can/can't I do when suffering from a concussion </h2>
-		<p> second test text </p>
+	<div class="tabBar" id="tab_bar">
+		<button class="buttons" id="dialerbutton">Dialer</button>
+		<button class="buttons" id="contactlistbutton">Contact List</button>
+		<button class="buttons" id="addcontactbutton">Add Contact</button>
+		<button class="buttons" id="gestureareabutton">Test Gestures</button>
+	</div>
 
-	<h2> How am I doing as of the writing of this blog post </h2>
-
-		<p> even more test text </p>
-
-	<h2> Would you like more info on Williams stupid adventures?</h2>
+	
 
 
-	<div class="infoformclass" id="infoformid">
-		<ul style="list-style: none; padding:0;">
+	<div id="content">
+
+
+
+	
+		<div class="dialerclass" id="dialer" class="tabcontent">
+		   <p>
 			<form class="pure-form pure-form-stacked">
-			 	<li> <input id="emailinfo" placeholder="Give me your email!">  </li>
-			 	<li> <input id="nameinfo" placeholder="What is your name?">  </li>
-			 	<li> <input id="locationinfo" placeholder="Where do you live?"> </li>
+			 	<input id="phonedialer" placeholder="">
 			</form>
-				<li> <button class="submitbuttonclass" id="submitbutton1"> Submit!</button> </li>
-		</ul>
+		    </p>
+		  <p>
+			<button class="dialerbuttons" id="dialerbuttonnumbers1">1</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers2">2</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers3">3</button>
+		  </p>
+		  <p>
+			<button class="dialerbuttons" id="dialerbuttonnumbers4">4</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers5">5</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers6">6</button>
+		  </p>
+		  <p>
+			<button class="dialerbuttons" id="dialerbuttonnumbers7">7</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers8">8</button>
+			<button class="dialerbuttons" id="dialerbuttonnumbers9">9</button>
+		  </p>
+		  	<button class="dialerbuttons" id="dialerdial">Dial</button>
+		  	<button class="dialerbuttons" id="dialerbuttonnumbers0">0</button>
+		  	<button class="dialerbuttons" id="dialerclear">Clear</button>
+
 		
+		</div>	
+	
+		<div class="contactlistclass" id="contactlist" class="tabcontent">
+		    <p>
+			<button class="contactbuttons" id="contactbuttonnames">Amos Oz</button>
+			<button class="contactbuttons" id="contactbuttonnames">E Lynn Harris</button>
+			<button class="contactbuttons" id="contactbuttonnames">Dave Eggers</button>
+			</p>
+			<p>
+			<button class="contactbuttons" id="contactbuttonnames">Chava Rosenfarb</button>
+			<button class="contactbuttons" id="contactbuttonnames">Farid Attar</button>
+			<button class="contactbuttons" id="contactbuttonnames">Ross Gay</button>
+		    </p>
+		</div>
 
 
 
+		<div class="addcontactclass" id="addcontact" class="tabcontent">
+			
+			<form class="pure-form pure-form-stacked">
+	 	  		<label for="name">Name</label>
+			 	<input id="name" placeholder="Jane Smith">
+			</form>
 
-</body>
+			<form class="pure-form pure-form-stacked">
+		 		 <label for="phonenumber">Phone Number</label>
+		  		 <input id="phonenumber" placeholder="303-867-5309">
+			</form>
+
+
+			<form class="pure-form pure-form-stacked">
+		 		<label for="name">Email Address</label>
+	 			 <input id="emailaddress" placeholder="something@domain.com">
+			</form>
+	
+		</div>
+
+
+		<div class="gesturecontent" id="gesturebox"> 
+			<form class="pure-form pure-form-stacked">
+	  		<input id="gesture_output" placeholder=" ">	
+			</form>
+			<div class="gesturecontent" id="gesturearea"> 
+			</div>
+		</div>
+
+	
+					
+		</div>
+
+
+	<!--<form class="pure-form pure-form-stacked">
+	 	  <label for="name">Name</label>
+		  <input id="name" placeholder="Jane Smith">
+	</form>
+
+		<form class="pure-form pure-form-stacked">
+		  <label for="phonenumber">Phone Number</label>
+		  <input id="phonenumber" placeholder="303-867-5309">
+	</form>
+
+
+	<form class="pure-form pure-form-stacked">
+		 <label for="name">Email Address</label>
+	 	 <input id="emailaddress" placeholder="something@domain.com">
+	</form>
+	
+	</div>
+	-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="phone.js"></script>
 </head>
-</html> 
 
+</html>
