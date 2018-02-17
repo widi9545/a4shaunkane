@@ -1,3 +1,7 @@
 .hiddenalert{
 	display:none;
 }
+
+#submitalert{
+	color:red;
+}
